@@ -1,0 +1,23 @@
+/* Define mixing with 2 arguments */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.div-border {
+  border: 2px solid orange;
+  /*call mixin with two values */
+  color: yellow;
+  background-color: orange;
+  font-size: 30px;
+}/*# sourceMappingURL=examp.css.map */

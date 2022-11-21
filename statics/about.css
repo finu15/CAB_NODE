@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: orange;
+
+}
+
+.section{
+    display: flex;
+}
+
+.text{
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}

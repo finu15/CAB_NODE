@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link href="static/confirm.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <center><a href="booking.html">Back to Booking page</a></center>
+
+    <center>
+
+        <video width="900" height="350" loop control autoplay muted>
+
+            <source src="static/image/confirm.mp4" type="video/mp4">
+            <source src="static/image/confirm.mp4" type="video/ogg">
+
+        </video>
+
+        <h2>Submitted Details:</h2>
+
+        <input type="button" name="btnShow" value="Show Data" onclick="showData();" />
+
+        Welcome <label id="lblpickup"></label>
+        <span id="pickup"></span> ! Your address is <span id="destination"></span>
+    </br>
+        <a href='payment.html'>
+            <button class="pay">
+                MAKE PAYMENT💸
+            </button>
+        </a>
+
+    </center>
+    <script>
+        function showData() {
+            var data = JSON.parse(localStorage.getItem('formData'))
+            console.log(data.firstName);
+            var pickup = data.pickup;
+            var destination = data.destination;
+            console.log(pickup);
+            document.getElementById('pickup').innerHTML = data.pickup;
+            document.getElementById('destination').innerHTML = data.destination;
+        }
+    </script>
+</body>
+
+</html>

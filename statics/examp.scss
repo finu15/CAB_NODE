@@ -1,0 +1,38 @@
+/* Define mixing with 2 arguments */
+
+@mixin bordered($color, $width){
+    border: $width solid $color;
+}
+
+@mixin nav-style {
+    nav {
+        ul{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        a{
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+            color:white;
+        }
+
+    }
+    
+}
+
+@include nav-style();
+
+
+.div-border {
+    @include bordered(orange,2px ); /*call mixin with two values */
+    color: yellow;
+    background-color: orange;
+    font-size: 30px;
+}
